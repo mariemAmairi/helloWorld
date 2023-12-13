@@ -1,0 +1,15 @@
+FROM python:alpine3.7
+
+COPY . /app
+
+WORKDIR /app
+
+
+
+ENV PORT 5000
+
+EXPOSE 5000
+
+ENTRYPOINT [ "python3"]
+
+CMD [ "main.py" ]
